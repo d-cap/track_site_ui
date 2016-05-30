@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="track-site">
+<html lang="en" ng-app="trackSite">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -47,6 +47,7 @@
         <div class="ui text container">
           <h1 class="ui header" ng-controller="UrlController">
             {{ message }}
+            <url-list></url-list>
           </h1>
         </div>
       </div>
@@ -71,10 +72,11 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/services/path_service.js"></script>
-    <script src="scripts/services/url_service.js"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+    <script src="scripts/services/path_service.js" charset="utf-8"></script>
+    <script src="scripts/services/url_service.js" charset="utf-8"></script>
     <script src="scripts/controllers/url_controller.js" charset="utf-8"></script>
+    <script src="scripts/components/url_list.js" charset="utf-8"></script>
     <!-- endbuild -->
 
     <script>

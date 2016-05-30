@@ -7,6 +7,6 @@
     };
   };
 
-  var app = angular.module('track-site');
+  var app = angular.module('trackSite');
   app.factory('pathService', pathService);
 }());
