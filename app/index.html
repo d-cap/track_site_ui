@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en" ng-app="track-site">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -45,8 +45,8 @@
         </div>
 
         <div class="ui text container">
-          <h1 class="ui header">
-            Track site!
+          <h1 class="ui header" ng-controller="UrlController">
+            {{ message }}
           </h1>
         </div>
       </div>
@@ -65,13 +65,16 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angularjs/angular.min.js"></script>
     <script src="/bower_components/semantic-ui/dist/semantic.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/services/path_service.js"></script>
+    <script src="scripts/services/url_service.js"></script>
+    <script src="scripts/controllers/url_controller.js" charset="utf-8"></script>
     <!-- endbuild -->
 
     <script>
