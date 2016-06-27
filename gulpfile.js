@@ -4,7 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
-bower = require('gulp-bower');
+const bower = require('gulp-bower');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
